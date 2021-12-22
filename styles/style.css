@@ -425,7 +425,7 @@ body.hidden {
   display: inline-block;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -449,7 +449,7 @@ body.hidden {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -464,7 +464,7 @@ body.hidden {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -479,7 +479,7 @@ body.hidden {
 .icon-map::before {
   content: '';
   display: block;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -500,7 +500,7 @@ body.hidden {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -681,7 +681,7 @@ body.hidden {
   bottom: 0;
   margin: auto;
   width: 20px;
-  background-image: url(/images/common/arrow-wh.png);
+  background-image: url(../images/common/arrow-wh.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -723,7 +723,7 @@ body.hidden {
 }
 
 .more-btn__link.slide-bg:hover span:first-child::before {
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
 }
 
 @media (min-width: 600px) {
@@ -1021,7 +1021,7 @@ body.hidden {
   content: '';
   height: 10px;
   width: 10px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1288,14 +1288,14 @@ body.hidden {
 }
 
 .c-recruit .recruit-detaiil-sec__ico.is-detail::before {
-  background-image: url(../images/recruit/ico_detail01.png);
+  background-image: url(..../images/recruit/ico_detail01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .c-recruit .recruit-detaiil-sec__ico.is-info::before {
-  background-image: url(../images/recruit/ico_info01.png);
+  background-image: url(..../images/recruit/ico_info01.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1388,7 +1388,7 @@ body.hidden {
   right: 0;
   width: 16px;
   height: 16px;
-  background-image: url(/images/common/icon-arrow-down.png);
+  background-image: url(../images/common/icon-arrow-down.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1503,7 +1503,7 @@ body.hidden {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1890,7 +1890,7 @@ body.hidden {
   display: inline-block;
   height: 18px;
   width: 18px;
-  background-image: url(../images/common/arrow.png);
+  background-image: url(..../images/common/arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1906,7 +1906,7 @@ body.hidden {
 }
 
 .p-header .logo {
-  background-image: url(/images/common/riv_logo_official2.png);
+  background-image: url(../images/common/riv_logo_official2.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1916,7 +1916,7 @@ body.hidden {
 }
 
 .p-header .logo.inview {
-  background-image: url(/images/common/riv_logo_02.png);
+  background-image: url(../images/common/riv_logo_02.png);
 }
 
 .p-header .mobile-button {
@@ -2077,7 +2077,7 @@ body.hidden {
     content: '';
     height: 18px;
     width: 18px;
-    background-image: url(/images/common/tel-white.png);
+    background-image: url(../images/common/tel-white.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -2090,7 +2090,7 @@ body.hidden {
     content: '';
     height: 18px;
     width: 18px;
-    background-image: url(/images/common/icon-link-1-white.png);
+    background-image: url(../images/common/icon-link-1-white.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -2183,15 +2183,15 @@ body.hidden {
 }
 
 .contact-btn-item .tel::before {
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
 }
 
 .contact-btn-item .mail::before {
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
 }
 
 .contact-btn-item .insta::before {
-  background-image: url(/images/common/insta-black.png);
+  background-image: url(../images/common/insta-black.png);
 }
 
 .mobile-container {
@@ -2211,7 +2211,7 @@ body.hidden {
   right: 20%;
   height: 20px;
   width: 20px;
-  background-image: url(/images/tel-gray.png);
+  background-image: url(../images/tel-gray.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2222,7 +2222,7 @@ body.hidden {
 .mobile-container .mobile-ico.inview {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(/images/tel-white.png);
+  background-image: url(../images/tel-white.png);
 }
 
 .mobile-container .mobile-ico a {
@@ -2237,7 +2237,7 @@ body.hidden {
   left: 5%;
   height: 43px;
   width: 138px;
-  background-image: url(/images/riv_logo-gray.png);
+  background-image: url(../images/riv_logo-gray.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2248,7 +2248,7 @@ body.hidden {
 .mobile-container .mobile-logo.inview {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-image: url(/images/riv_logo-white.png);
+  background-image: url(../images/riv_logo-white.png);
 }
 
 .mobile-container .mobile-button {

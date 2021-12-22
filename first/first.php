@@ -1,85 +1,23 @@
+<?php
+ /* Template Name: first
+ */
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>初めての方へ | ピアノ教室テンプレート1</title>
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <?php get_header(); ?>
+
 </head>
 
 <body class="animsition">
   <div class="superwrapper">
     <main id="main-contents" class="c-first">
-      <header id="header" class="p-header">
-        <div class="mobile-container">
-          <div class="logo__img">
-            <a href="/">
-              <div class="logo"></div>
-            </a>
-          </div>
-          <div class="mobile-button">
-            <button class="mobile-menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-        <!-- /.mobile-container -->
-        <div class="pc-container">
-          <div class="logo__img">
-            <a class="animsition-link" href="/">
-              <div class="logo-pc logo"></div>
-            </a>
-          </div>
-          <nav class="pc-nav">
-            <ul class="pc-nav-list">
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/first/first.html"><span>初めての方へ</span>
-                  <small>FIRST</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link"
-                  href="/price/price.html"><span>コース紹介</span><small>PRICE</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link"
-                  href="/staff/staff.html"><span>スタッフ紹介</span><small>STAFF</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span><small>FAQ</small></a>
-              </li>
-              <li class="pc-nav-item">
-                <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span><small>NEWS</small></a>
-              </li>
-            </ul>
-            <div class="pc-contact">
-              <a class="pc-tel" href="tel:092-686-7954">0120-123-456</a>
-              <a target="_blank" class="pc-net" href="https://beauty.hotpepper.jp/">オンライン予約</a>
-            </div>
-          </nav>
-        </div>
-        <!-- /.pc-container -->
-        <nav class="sp-navbtn">
-          <ul class="sp-navbtn__container">
-            <li>
-              <a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a>
-            </li>
-            <li>
-              <a class="net" target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約<i class="icon-net"></i></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- /.nav-btn -->
-      </header>
-      <!-- /.header -->
+      <?php get_template_part('includes/c-header'); ?>
       <section class="c-topview">
         <div class="c-topview__img">
-          <img src="/images/home/first.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/home/first.jpg" alt="">
         </div>
       </section>
       <!-- /.c-topview -->
@@ -109,7 +47,7 @@
         <ul>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/top-page-2.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/top-page-2.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -126,7 +64,7 @@
           </li>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/point-3.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/point-3.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -144,7 +82,7 @@
           </li>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/point-2.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/point-2.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -163,7 +101,7 @@
           </li>
           <li class="c-points__item">
             <div class="c-points__img">
-              <img src="/images/home/topview-1@pc.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/topview-1@pc.jpg" alt="">
             </div>
             <div class="c-points__desc">
               <h4>
@@ -192,14 +130,14 @@
           <section id="flow01" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/reserve.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/reserve.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">01</span>ご予約</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/reserve.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/reserve.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">
@@ -211,14 +149,14 @@
           <section id="flow02" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/counseling_1@pc.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling_1@pc.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">02</span>ヒアリング</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/counseling_1@pc.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling_1@pc.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">
@@ -231,14 +169,14 @@
           <section id="flow03" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/point-1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/point-1.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">03</span>ウォーミングアップ</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/point-1.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/point-1.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">
@@ -253,14 +191,14 @@
           <section id="flow04" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/flow.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/flow.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">04</span>課題曲練習</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/flow.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/flow.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">あなたのレベルやペースに合わせた講師指定の課題曲を弾いていきます。
@@ -274,14 +212,14 @@
           <section id="flow05" class="c-flow-item">
             <div class="c-container">
               <div class="item-img view-pc">
-                <img src="/images/home/first.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/first.jpg" alt="">
               </div>
               <div class="item-wrap">
                 <h4 class="item-tit">
                   <p><span class="num">05</span>練習曲で実践的な練習！</p>
                 </h4>
                 <div class="item-img view-sp">
-                  <img src="/images/home/first.jpg" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/first.jpg" alt="">
                 </div>
                 <div class="item-desc">
                   <p class="c-txt-sm">弾きたい曲にチャレンジしていきましょう。もし譜面が難しい場合は、楽譜を現在のレベルに合わせて簡略して練習していきますのでご安心ください。</p>
@@ -291,7 +229,7 @@
           </section>
         </div>
         <div class="more-btn item">
-          <a href="/faq/faq.html" class="more-btn__link slide-bg animsition-link">
+          <a href="<?php echo esc_url( home_url('/faq')); ?>" class="more-btn__link slide-bg animsition-link">
             <span class="c-txt-sm">よくあるご質問</span>
             <span class="bg"></span></a>
         </div>
@@ -299,75 +237,10 @@
       <!-- /.c-flow -->
     </main>
     <!-- /#main-contents -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv_logo_official2.png" alt="">
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/first/first.html"><span class="c-txt-sm">初めての方へ</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/price/price.html"><span class="c-txt-sm">コース紹介</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/staff/staff.html"><span class="c-txt-sm">スタッフ紹介</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"><span class="c-txt-sm">採用情報</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/news/news.html"><span class="c-txt-sm">お知らせ</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 RivRound</div>
-      </div>
-    </footer>
-    <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href="/">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/price/price.html">コース紹介</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">電話予約</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a target="_blank" href="https://beauty.hotpepper.jp/">
-                <span class="mail">オンライン予約</span>
-              </a>
-            </li>
-        </div>
-        </ul>
-      </nav>
-    </div>
-    <!-- /.mobile-menu -->
+    <?php get_footer(); ?>
+
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <!-- <script src="/scripts/main.js"></script> -->
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
 
 </html>

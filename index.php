@@ -2,93 +2,25 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ピアノ教室テンプレート1 | ホーム</title>
-  <link rel="stylesheet" href="styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="styles/vendor/swiper.min.css">
-  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="styles/style.css">
-
+  <title>ピアノ教室-1</title>
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
   <div class="superwrapper">
-    <header id="header" class="p-header">
-      <div class="mobile-container">
-        <div class="logo__img">
-          <a href="/">
-            <div class="logo"></div>
-          </a>
-        </div>
-        <div class="mobile-button">
-          <button class="mobile-menu__btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
-      <!-- /.mobile-container -->
-      <div class="pc-container">
-        <div class="logo__img">
-          <a class="animsition-link" href="/">
-            <div class="logo-pc logo"></div>
-          </a>
-        </div>
-        <nav class="pc-nav">
-          <ul class="pc-nav-list">
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/first/first.html"><span>初めての方へ</span>
-                <small>FIRST</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/price/price.html"><span>コース紹介</span><small>PRICE</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link"
-                href="/staff/staff.html"><span>スタッフ紹介</span><small>STAFF</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/faq/faq.html"><span>よくあるご質問</span><small>FAQ</small></a>
-            </li>
-            <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>お知らせ</span><small>NEWS</small></a>
-            </li>
-          </ul>
-          <div class="pc-contact">
-            <a class="pc-tel" href="tel:092-686-7954">0120-123-456</a>
-            <a target="_blank" class="pc-net" href="https://beauty.hotpepper.jp/">オンライン予約</a>
-          </div>
-        </nav>
-      </div>
-      <!-- /.pc-container -->
-      <nav class="sp-navbtn">
-        <ul class="sp-navbtn__container">
-          <li>
-            <a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a>
-          </li>
-          <li>
-            <a class="net" target="_blank" href="https://beauty.hotpepper.jp/">オンライン予約<i class="icon-net"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.nav-btn -->
-    </header>
-    <!-- /.header -->
+    <?php get_template_part('includes/c-header'); ?>
     <main id="main-contents">
       <section class="top-view">
         <div class="hero bg">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="hero-img view-sp" src="/images/home/topview-1@sp.jpg" />
-                <img class="hero-img view-pc" src="/images/home/topview-1@pc.jpg" />
+                <img class="hero-img view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/topview-1@sp.jpg" />
+                <img class="hero-img view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/topview-1@pc.jpg" />
               </div>
               <div class="swiper-slide">
-                <img class="hero-img view-sp" src="/images/home/topview-2@sp.jpg" />
-                <img class="hero-img view-pc" src="/images/home/topview-2@pc.jpg" />
+                <img class="hero-img view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/topview-2@sp.jpg" />
+                <img class="hero-img view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/topview-2@pc.jpg" />
               </div>
             </div>
           </div>
@@ -111,8 +43,8 @@
           <div class="p-first__container">
             <div class="p-first__img">
               <ul>
-                <li><img class="parallax-img" src="/images/home/top-page-1.jpg" alt=""></li>
-                <li><img class="parallax-img" src="/images/home/top-page-2.jpg" alt=""></li>
+                <li><img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/top-page-1.jpg" alt=""></li>
+                <li><img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/top-page-2.jpg" alt=""></li>
               </ul>
             </div>
             <div class="p-first__txt appear up">
@@ -124,7 +56,7 @@
                 </p>
               </div>
               <div class="more-btn item">
-                <a href="/first/first.html" class="more-btn__link slide-bg animsition-link">
+                <a href="<?php echo esc_url( home_url('/first')); ?>" class="more-btn__link slide-bg animsition-link">
                   <span class="c-txt-sm">初めての方へ</span>
                   <span class="bg"></span></a>
               </div>
@@ -136,7 +68,7 @@
       <section class="p-aicatch">
         <div class="p-aicatch__wrap">
           <div class="p-aicatch__img">
-            <img class="parallax-img" src="/images/home/faq.jpg" alt="">
+            <img class="parallax-img" src="<?php echo get_template_directory_uri(); ?>/images/home/faq.jpg" alt="">
           </div>
           <div class="c-container">
             <div class="p-aicatch__desc">
@@ -149,7 +81,7 @@
       <section class="p-concept">
         <div class="p-concept__wrap">
           <div class="p-concept__img">
-            <img src="/images/home/news.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/news.jpg" alt="">
           </div>
           <div class="c-container">
             <h2 class="p-title clip-js left">
@@ -172,7 +104,7 @@
       <section class="p-staff">
         <div class="p-staff__wrap appear up">
           <div class="p-staff__img cover-slide">
-            <img class="img-zoom" src="/images/home/staff.jpg" alt="">
+            <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/staff.jpg" alt="">
           </div>
           <div class="c-container">
             <h2 class="p-title clip-js left">
@@ -187,7 +119,7 @@
                   </p>
                 </div>
                 <div class="more-btn">
-                  <a href="/staff/staff.html" class="more-btn__link slide-bg animsition-link">
+                  <a href="<?php echo esc_url( home_url('/staff')); ?>" class="more-btn__link slide-bg animsition-link">
                     <span class="c-txt-sm">講師紹介へ</span>
                     <span class="bg"></span></a>
                 </div>
@@ -201,7 +133,7 @@
         <div class="p-price__flex">
           <div class="p-price__left">
             <div class="p-price__img cover-slide">
-              <img class="img-zoom" src="/images/home/pay@pc.jpg" alt="">
+              <img class="img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/pay@pc.jpg" alt="">
             </div>
             <div class="more-btn view-pc">
               <a href="/contact/contact.html" class="more-btn__link slide-bg animsition-link">
@@ -234,7 +166,7 @@
                 </dd>
               </dl>
               <div class="more-btn view-sp">
-                <a href="/price/price.html" class="more-btn__link slide-bg animsition-link">
+                <a href="<?php echo esc_url( home_url('/price')); ?>" class="more-btn__link slide-bg animsition-link">
                   <span class="c-txt-sm">コース紹介へ</span>
                   <span class="bg"></span></a>
               </div>
@@ -251,7 +183,7 @@
           </h2>
           <div class="p-access__wrap appear up">
             <div class="p-access__img item">
-              <img src="/images/home/store__2.jpg
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/store__2.jpg
               " alt="">
             </div>
             <div class="p-access__txt item">
@@ -287,9 +219,9 @@
             <span class="ja">インスタグラム</span>
           </h2>
           <div class="p-instagram__img item">
-            <a href="https://www.instagram.com/?hl=ja"><img src="/images/home/first.jpg" alt=""></a>
-            <a href="https://www.instagram.com/?hl=ja"><img src="/images/home/staff-top.jpg" alt=""></a>
-            <a href="https://www.instagram.com/?hl=ja"><img src="/images/home/topview-1@pc.jpg" alt=""></a>
+            <a href="https://www.instagram.com/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/home/first.jpg" alt=""></a>
+            <a href="https://www.instagram.com/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/home/staff-top.jpg" alt=""></a>
+            <a href="https://www.instagram.com/?hl=ja"><img src="<?php echo get_template_directory_uri(); ?>/images/home/topview-1@pc.jpg" alt=""></a>
           </div>
           <div class="p-instagram__desc item">
             <p class="c-txt-sm">インスタグラムはレッスンの光景等をアップしてますので是非一度ご覧下さい。</p>
@@ -311,7 +243,7 @@
           <ul>
             <li id="voice01" class="p-voices__item item">
               <div class="p-voices__img">
-                <img src="/images/home/icon-woman.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/icon-woman.png" alt="">
               </div>
               <div class="p-voices__desc">
                 <p class="name c-txt-sm">R.O様 / 42才 主婦女性</p>
@@ -324,7 +256,7 @@
             </li>
             <li id="voice02" class="p-voices__item item">
               <div class="p-voices__img">
-                <img src="/images/home/icon-men.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/icon-men.png" alt="">
               </div>
               <div class="p-voices__desc">
                 <p class="name c-txt-sm">A.I様 / 32才 会社員男性</p>
@@ -371,7 +303,7 @@
             </li>
           </ul>
           <div class="readmore item">
-            <a class="animsition-link" href="/news/news.html">
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">
               <span>お知らせ一覧</span></a>
           </div>
         </div>
@@ -379,81 +311,11 @@
       <!-- /.p-news -->
     </main>
     <!-- /#main-contents -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv_logo_official2.png" alt="">
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/first/first.html"><span class="c-txt-sm">初めての方へ</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/price/price.html"><span class="c-txt-sm">コース紹介</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/staff/staff.html"><span class="c-txt-sm">スタッフ紹介</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"><span class="c-txt-sm">採用情報</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/news/news.html"><span class="c-txt-sm">お知らせ</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 RivRound</div>
-      </div>
-    </footer>
-    <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href="/">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/price/price.html">コース紹介</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">電話予約</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a target="_blank" href="https://beauty.hotpepper.jp/">
-                <span class="mail">オンライン予約</span>
-              </a>
-            </li>
-        </div>
-        </ul>
-      </nav>
-    </div>
-    <!-- /.mobile-menu -->
+    <?php get_footer(); ?>
+
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <!-- <script src="/scripts/vendor/pace.js"></script> -->
-  <script src="/scripts/vendor/swiper.min.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/hero-slider.js"></script>
-  <script src="/scripts/vendor/simpleParallax.min.js"></script>
-  <script src="/scripts/libs/parallax.js"></script>
-  <script src="/scripts/libs/text-animation.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/main.js"></script>
+  <?php get_template_part('includes/c-footer'); ?>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/main.js"></script>
 </body>
 
 </html>
