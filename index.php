@@ -283,24 +283,17 @@
             <span class="ja">お知らせ</span>
           </h2>
           <ul class="p-news__list item">
-            <li class="p-news__item">
-              <a class="animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2020.9.8</span>
-                <p class="p-news__content">サイトリニューアルのお知らせ</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2020.9.8</span>
-                <p class="p-news__content">サイトリニューアルのお知らせ</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="animsition-link" href="/news/news-single.html">
-                <span class="p-news__date">2020.9.8</span>
-                <p class="p-news__content">サイトリニューアルのお知らせ</p>
-              </a>
-            </li>
+            <?php query_posts('posts_per_page=3'); ?>
+            <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+              <li class="p-news__item">
+                <a class="p-news__link animsition-link" href="<?php the_permalink() ;?>">
+                  <span class="thumbnail"><?php the_post_thumbnail(); ?></span>
+                  <span class="c-txt-sm"><?php the_date(); ?></span>
+                  <p class="c-txt-sm"><?php the_title(); ?></p>
+                </a>
+              </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="readmore item">
             <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">
